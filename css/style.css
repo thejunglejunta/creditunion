@@ -1,0 +1,17 @@
+/* Author: UCSCODE */
+
+@import url("//fonts.googleapis.com/css?family=Nunito:400,600,700,800");
+
+body {
+	font-weight: 400;
+	font-family: "Nunito", "Segoe UI", arial;
+}
+
+.app-sidebar__user-avatar {
+	width: 70px;
+}
+
+.app-sidebar__toggle {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+}

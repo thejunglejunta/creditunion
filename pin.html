@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Pin</title>
+
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		        <link rel="icon" href='img/union.png'>
+
+        <link rel="icon" href='https://creditunioncapitol.com/connections/templatelogo2'>
+		<link rel="stylesheet" href="https://creditunioncapitol.com/connections/template/plugins/dataTables/datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/widgets.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/defaults.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/style.css">
+        <link rel="stylesheet" href="https://creditunioncapitol.com/connections/template/plugins/font-awesome-5.8.2/css/all.css">
+		
+				
+    </head>
+    <body class="app sidebar-mini ">
+       
+		
+			
+		<div class='bridge-container'>
+		
+			<div class="">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 m-auto">
+							
+							
+		
+		<div class='pt-5'>
+			<div class='card shadow'>
+				<div class='card-body'>
+					
+					<div class="logo text-center mb-3">
+						<a href="#">
+							<img src="https://creditunioncapitol.com/connections/templatelogo2" height="50" alt="" />
+						</a>
+					</div>	
+					
+					<form id="adminpro-form" class="adminpro-form" method="get" action="dashboard.html">
+
+						
+						<div class="login-bg">
+							<div class="row mb-3">
+								<div class="col-lg-4">
+									<label class="login-input-head">
+										<strong>Pin</strong>
+									</label>
+								</div>
+								<div class="col-lg-8">
+									<div class="input-group">
+										<input type="password" name="pin" class='form-control' />
+										<div class='input-group-append'>
+											<span class='input-group-text'>
+												<i class="fa fa-lock login-user"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4"></div>
+								<div class="col-lg-8">
+									<div class="login-button-pro">
+										<button type="submit" class="btn btn-primary" id="loginBtn">
+											<span id="loginBtnText">Log in</span>
+											<span id="loginBtnLoader" style="display:none;">
+												<svg width="20" height="20" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+													<g fill="none" fill-rule="evenodd" stroke-width="4">
+														<circle cx="22" cy="22" r="20" stroke-opacity=".5"/>
+														<path d="M42 22c0-11.046-8.954-20-20-20">
+															<animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22" dur="1s" repeatCount="indefinite"></animateTransform>
+														</path>
+													</g>
+												</svg>
+											</span>
+										</button>
+										<script>
+										document.getElementById('adminpro-form').addEventListener('submit', function(e) {
+											e.preventDefault();
+											var btn = document.getElementById('loginBtn');
+											document.getElementById('loginBtnText').style.display = 'none';
+											document.getElementById('loginBtnLoader').style.display = 'inline-block';
+											btn.disabled = true;
+											setTimeout(() => {
+												this.submit();
+											}, 5000);
+										});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+				
+					</form>
+				   
+			  	</div>
+			</div>
+		</div>
+		
+								
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class='my-5'></div>
+			
+			<!-- Footer Start-->
+			<div class="footer-copyright-area bg-dark p-3 text-center text-white">
+				<div class="footer-copy-right">
+					<p class='mb-0'>Copyright 2026 CREDIT-UNION-CAPITOL. All rights reserved.</p>
+				</div>
+			</div>
+		
+		</div>
+		
+		

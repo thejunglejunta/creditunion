@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	
+        <title>Local Transfer</title>
+        
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+                <link rel="icon" href='img/union.png'>
+
+		<link rel="icon" href='https://creditunioncapitol.com/connections/templatelogo2'>
+		<link rel="stylesheet" href="https://creditunioncapitol.com/connections/template/plugins/dataTables/datatables.min.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/main.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/widgets.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/defaults.css">
+        <link rel="stylesheet" type="text/css" href="https://creditunioncapitol.com/connections/template/assets-user/css/style.css">
+        <link rel="stylesheet" href="https://creditunioncapitol.com/connections/template/plugins/font-awesome-5.8.2/css/all.css">
+		
+		<style>
+		[data-sbx] {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>		
+    </head>
+    <body class="app sidebar-mini ">
+       
+					
+			<header class="app-header">
+				<a class="app-header__logo" href="dashboard.html">
+					<img src='#' height='40px'>
+				</a>
+				<!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+				<!-- Navbar Right Menu-->
+				<ul class="app-nav">
+					<!--Notification Menu-->
+					<li class="dropdown">
+						<div id="google_translate_element" style="margin-left:2%"></div>
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+							  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement, autoDisplay: false}, 'google_translate_element');
+							}
+						</script>
+						<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+					</li>
+							<!-- User Menu-->
+							<li class="dropdown">
+								<a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+								<ul class="dropdown-menu settings-menu dropdown-menu-right">
+									<li><a class="dropdown-item" href="profile.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
+									<li><a class="dropdown-item" href="cpassword.html"><i class="fa fa-key fa-lg"></i> Password</a></li>
+									<li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</header>
+					
+								
+					<!-- Sidebar menu-->
+					<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+					<aside class="app-sidebar">
+					
+						<div class="app-sidebar__user d-block text-center">
+							
+		<img class="app-sidebar__user-avatar oval-pic" src="img/d283b24a77c83302c916412dc0e094c8.jpeg" alt="User Image">
+
+							<div class='mt-2'>
+								
+		<p class="app-sidebar__user-name">Monika Fischer</p>
+
+								<p class="app-sidebar__user-designation d-none"></p>
+							</div>
+						</div>
+						
+						<ul class="app-menu">
+						
+							<li>
+								<a class="app-menu__item" href="dashboard.html">
+									<i class="app-menu__icon fas fa-home"></i>
+									<span class="app-menu__label">Dashboard</span>
+								</a>
+							</li>
+							
+												<li>
+								<a href="kyc.html" class="treeview-item text-white d-block brand-text">
+									You have not yet verified you KYC. Click now to submit your details
+								</a>
+							</li>
+											
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-users"></i>
+									<span class="app-menu__label">My Account</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="profile.html">Profile</a></li>
+									<li><a class="treeview-item" href="statement.html">Statements</a></li>
+									<li><a class="treeview-item" href="kyc.html">KYC</a></li>
+									<li><a class="treeview-item" href="cpassword.html">Change Password</a></li>
+									<li><a class="treeview-item" href="cpin.html">Change Pin</a></li>
+									<li><a class="treeview-item" href="activity.html">Activity Log</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-paper-plane"></i>
+									<span class="app-menu__label">Transfer</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="local.html">Domestic</a></li>
+									<li><a class="treeview-item" href="international.html">International</a></li>
+									<li><a class="treeview-item" href="payment.html">History</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-landmark"></i>
+									<span class="app-menu__label">Monetary</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="#">Digital Deposit</a></li>
+									<li><a class="treeview-item" href="#">Cards</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview"></li>
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-users"></i>
+									<span class="app-menu__label">Loan</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="loan.html">Loan Application</a></li>
+									<li><a class="treeview-item" href="sloan.html">Loan Status</a></li>
+								</ul>
+							</li>
+						
+							<li class="treeview">
+								<a class="app-menu__item" href="#" data-toggle="treeview">
+									<i class="app-menu__icon fa fa-check-double"></i>
+									<span class="app-menu__label">Support</span>
+									<i class="treeview-indicator fa fa-angle-right"></i>
+								</a>
+								<ul class="treeview-menu">
+									<li><a class="treeview-item" href="faq.html">FAQ</a></li>
+									<li><a class="treeview-item" href="message.html">Message</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a class="app-menu__item" href="index.html">
+									<i class="app-menu__icon fa fa-user"></i>
+									<span class="app-menu__label">Logout</span>
+								</a>
+							</li>
+						</ul>
+					</aside>		
+			<main class="app-content">
+			
+			
+	
+	<div class="app-title d-block">
+		<div>
+						<h1>
+				<i class="fas fa-users"></i> 
+				Domestic Transfer			</h1>
+					</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="sparkline12-list shadow-reset mg-t-30">
+			
+				<div class="sparkline12-hd">
+					<div class="main-sparkline12-hd">
+						<button class="btn btn-primary">
+						Domestic Transfer
+						</button> &nbsp;&nbsp; 
+						<a href="#"><button class="btn btn-primary">Mobile Deposit</button></a>	
+					</div>
+				</div>
+				
+				<div class='my-4'></div>
+				
+				<div class="sparkline12-graph">
+					<div class="basic-login-form-ad">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="all-form-element-inner">
+								
+									<form action="successful.html" method="get" data-preload='.all-form-element-inner' data-title='Transfer in progress...' data-info='Please wait while your transaction is processing'>
+									
+																				
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">From</label>
+												</div>
+												<div class="col-lg-6">
+													<select type="text" class="form-control">
+														<option value="6993413189">
+															6993413189 &nbsp;| &nbsp;$525,200														</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Date</label>
+												</div>
+												<div class="col-lg-3">
+													<input type="text" name="date" value="01-08-26" readonly="true" class="form-control" />
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Amount</label>
+												</div>
+												<div class="col-lg-6">
+													<input type="double" name="amount" id="amount" class="form-control mb-1" />
+													<input type="double" id="charge-display" placeholder="Transaction charges is displayed here" readonly="true" class="form-control">
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Beneciary</label>
+												</div>
+												<div class="col-lg-6">
+													<input type="text" class="form-control" name="beneficiary"  maxlength="160" value=""  placeholder="Beneficiary's Name or Organization Name"/>
+																									</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Beneficiary Account</label>
+												</div>
+												<div class="col-lg-6">
+													<input type="text"  name="tacctno" placeholder='Account No' class="form-control" />
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Beneficiary Country</label>
+												</div>
+												<div class="col-lg-3">
+													<select name='country' class='form-control'>
+	<option value='AF' >Afghanistan</option>
+	<option value='AX' >Åland Islands</option>
+	<option value='AL' >Albania</option>
+	<option value='DZ' >Algeria</option>
+	<option value='AS' >American Samoa</option>
+	<option value='AD' >Andorra</option>
+	<option value='AO' >Angola</option>
+	<option value='AI' >Anguilla</option>
+	<option value='AQ' >Antarctica</option>
+	<option value='AG' >Antigua and Barbuda</option>
+	<option value='AR' >Argentina</option>
+	<option value='AM' >Armenia</option>
+	<option value='AW' >Aruba</option>
+	<option value='AU' >Australia</option>
+	<option value='AT' >Austria</option>
+	<option value='AZ' >Azerbaijan</option>
+	<option value='BS' >Bahamas</option>
+	<option value='BH' >Bahrain</option>
+	<option value='BD' >Bangladesh</option>
+	<option value='BB' >Barbados</option>
+	<option value='BY' >Belarus</option>
+	<option value='BE' >Belgium</option>
+	<option value='BZ' >Belize</option>
+	<option value='BJ' >Benin</option>
+	<option value='BM' >Bermuda</option>
+	<option value='BT' >Bhutan</option>
+	<option value='BO' >Bolivia, Plurinational State of</option>
+	<option value='BQ' >Bonaire, Sint Eustatius and Saba</option>
+	<option value='BA' >Bosnia and Herzegovina</option>
+	<option value='BW' >Botswana</option>
+	<option value='BV' >Bouvet Island</option>
+	<option value='BR' >Brazil</option>
+	<option value='IO' >British Indian Ocean Territory</option>
+	<option value='BN' >Brunei Darussalam</option>
+	<option value='BG' >Bulgaria</option>
+	<option value='BF' >Burkina Faso</option>
+	<option value='BI' >Burundi</option>
+	<option value='KH' >Cambodia</option>
+	<option value='CM' >Cameroon</option>
+	<option value='CA' >Canada</option>
+	<option value='CV' >Cape Verde</option>
+	<option value='KY' >Cayman Islands</option>
+	<option value='CF' >Central African Republic</option>
+	<option value='TD' >Chad</option>
+	<option value='CL' >Chile</option>
+	<option value='CN' >China</option>
+	<option value='CX' >Christmas Island</option>
+	<option value='CC' >Cocos (Keeling) Islands</option>
+	<option value='CO' >Colombia</option>
+	<option value='KM' >Comoros</option>
+	<option value='CG' >Congo</option>
+	<option value='CD' >Congo, the Democratic Republic of the</option>
+	<option value='CK' >Cook Islands</option>
+	<option value='CR' >Costa Rica</option>
+	<option value='CI' >Côte d'Ivoire</option>
+	<option value='HR' >Croatia</option>
+	<option value='CU' >Cuba</option>
+	<option value='CW' >Curaçao</option>
+	<option value='CY' >Cyprus</option>
+	<option value='CZ' >Czech Republic</option>
+	<option value='DK' >Denmark</option>
+	<option value='DJ' >Djibouti</option>
+	<option value='DM' >Dominica</option>
+	<option value='DO' >Dominican Republic</option>
+	<option value='EC' >Ecuador</option>
+	<option value='EG' >Egypt</option>
+	<option value='SV' >El Salvador</option>
+	<option value='GQ' >Equatorial Guinea</option>
+	<option value='ER' >Eritrea</option>
+	<option value='EE' >Estonia</option>
+	<option value='ET' >Ethiopia</option>
+	<option value='FK' >Falkland Islands (Malvinas)</option>
+	<option value='FO' >Faroe Islands</option>
+	<option value='FJ' >Fiji</option>
+	<option value='FI' >Finland</option>
+	<option value='FR' >France</option>
+	<option value='GF' >French Guiana</option>
+	<option value='PF' >French Polynesia</option>
+	<option value='TF' >French Southern Territories</option>
+	<option value='GA' >Gabon</option>
+	<option value='GM' >Gambia</option>
+	<option value='GE' >Georgia</option>
+	<option value='DE' >Germany</option>
+	<option value='GH' >Ghana</option>
+	<option value='GI' >Gibraltar</option>
+	<option value='GR' >Greece</option>
+	<option value='GL' >Greenland</option>
+	<option value='GD' >Grenada</option>
+	<option value='GP' >Guadeloupe</option>
+	<option value='GU' >Guam</option>
+	<option value='GT' >Guatemala</option>
+	<option value='GG' >Guernsey</option>
+	<option value='GN' >Guinea</option>
+	<option value='GW' >Guinea-Bissau</option>
+	<option value='GY' >Guyana</option>
+	<option value='HT' >Haiti</option>
+	<option value='HM' >Heard Island and McDonald Islands</option>
+	<option value='VA' >Holy See (Vatican City State)</option>
+	<option value='HN' >Honduras</option>
+	<option value='HK' >Hong Kong</option>
+	<option value='HU' >Hungary</option>
+	<option value='IS' >Iceland</option>
+	<option value='IN' >India</option>
+	<option value='ID' >Indonesia</option>
+	<option value='IR' >Iran, Islamic Republic of</option>
+	<option value='IQ' >Iraq</option>
+	<option value='IE' >Ireland</option>
+	<option value='IM' >Isle of Man</option>
+	<option value='IL' >Israel</option>
+	<option value='IT' >Italy</option>
+	<option value='JM' >Jamaica</option>
+	<option value='JP' >Japan</option>
+	<option value='JE' >Jersey</option>
+	<option value='JO' >Jordan</option>
+	<option value='KZ' >Kazakhstan</option>
+	<option value='KE' >Kenya</option>
+	<option value='KI' >Kiribati</option>
+	<option value='KP' >Korea, Democratic People's Republic of</option>
+	<option value='KR' >Korea, Republic of</option>
+	<option value='KW' >Kuwait</option>
+	<option value='KG' >Kyrgyzstan</option>
+	<option value='LA' >Lao People's Democratic Republic</option>
+	<option value='LV' >Latvia</option>
+	<option value='LB' >Lebanon</option>
+	<option value='LS' >Lesotho</option>
+	<option value='LR' >Liberia</option>
+	<option value='LY' >Libya</option>
+	<option value='LI' >Liechtenstein</option>
+	<option value='LT' >Lithuania</option>
+	<option value='LU' >Luxembourg</option>
+	<option value='MO' >Macao</option>
+	<option value='MK' >Macedonia, the Former Yugoslav Republic of</option>
+	<option value='MG' >Madagascar</option>
+	<option value='MW' >Malawi</option>
+	<option value='MY' >Malaysia</option>
+	<option value='MV' >Maldives</option>
+	<option value='ML' >Mali</option>
+	<option value='MT' >Malta</option>
+	<option value='MH' >Marshall Islands</option>
+	<option value='MQ' >Martinique</option>
+	<option value='MR' >Mauritania</option>
+	<option value='MU' >Mauritius</option>
+	<option value='YT' >Mayotte</option>
+	<option value='MX' >Mexico</option>
+	<option value='FM' >Micronesia, Federated States of</option>
+	<option value='MD' >Moldova, Republic of</option>
+	<option value='MC' >Monaco</option>
+	<option value='MN' >Mongolia</option>
+	<option value='ME' >Montenegro</option>
+	<option value='MS' >Montserrat</option>
+	<option value='MA' >Morocco</option>
+	<option value='MZ' >Mozambique</option>
+	<option value='MM' >Myanmar</option>
+	<option value='NA' >Namibia</option>
+	<option value='NR' >Nauru</option>
+	<option value='NP' >Nepal</option>
+	<option value='NL' >Netherlands</option>
+	<option value='NC' >New Caledonia</option>
+	<option value='NZ' >New Zealand</option>
+	<option value='NI' >Nicaragua</option>
+	<option value='NE' >Niger</option>
+	<option value='NG' >Nigeria</option>
+	<option value='NU' >Niue</option>
+	<option value='NF' >Norfolk Island</option>
+	<option value='MP' >Northern Mariana Islands</option>
+	<option value='NO' >Norway</option>
+	<option value='OM' >Oman</option>
+	<option value='PK' >Pakistan</option>
+	<option value='PW' >Palau</option>
+	<option value='PS' >Palestine, State of</option>
+	<option value='PA' >Panama</option>
+	<option value='PG' >Papua New Guinea</option>
+	<option value='PY' >Paraguay</option>
+	<option value='PE' >Peru</option>
+	<option value='PH' >Philippines</option>
+	<option value='PN' >Pitcairn</option>
+	<option value='PL' >Poland</option>
+	<option value='PT' >Portugal</option>
+	<option value='PR' >Puerto Rico</option>
+	<option value='QA' >Qatar</option>
+	<option value='RE' >Réunion</option>
+	<option value='RO' >Romania</option>
+	<option value='RU' >Russian Federation</option>
+	<option value='RW' >Rwanda</option>
+	<option value='BL' >Saint Barthélemy</option>
+	<option value='SH' >Saint Helena, Ascension and Tristan da Cunha</option>
+	<option value='KN' >Saint Kitts and Nevis</option>
+	<option value='LC' >Saint Lucia</option>
+	<option value='MF' >Saint Martin (French part)</option>
+	<option value='PM' >Saint Pierre and Miquelon</option>
+	<option value='VC' >Saint Vincent and the Grenadines</option>
+	<option value='WS' >Samoa</option>
+	<option value='SM' >San Marino</option>
+	<option value='ST' >Sao Tome and Principe</option>
+	<option value='SA' >Saudi Arabia</option>
+	<option value='SN' >Senegal</option>
+	<option value='RS' >Serbia</option>
+	<option value='SC' >Seychelles</option>
+	<option value='SL' >Sierra Leone</option>
+	<option value='SG' >Singapore</option>
+	<option value='SX' >Sint Maarten (Dutch part)</option>
+	<option value='SK' >Slovakia</option>
+	<option value='SI' >Slovenia</option>
+	<option value='SB' >Solomon Islands</option>
+	<option value='SO' >Somalia</option>
+	<option value='ZA' >South Africa</option>
+	<option value='GS' >South Georgia and the South Sandwich Islands</option>
+	<option value='SS' >South Sudan</option>
+	<option value='ES' >Spain</option>
+	<option value='LK' >Sri Lanka</option>
+	<option value='SD' >Sudan</option>
+	<option value='SR' >Suriname</option>
+	<option value='SJ' >Svalbard and Jan Mayen</option>
+	<option value='SZ' >Swaziland</option>
+	<option value='SE' >Sweden</option>
+	<option value='CH' >Switzerland</option>
+	<option value='SY' >Syrian Arab Republic</option>
+	<option value='TW' >Taiwan, Province of China</option>
+	<option value='TJ' >Tajikistan</option>
+	<option value='TZ' >Tanzania, United Republic of</option>
+	<option value='TH' >Thailand</option>
+	<option value='TL' >Timor-Leste</option>
+	<option value='TG' >Togo</option>
+	<option value='TK' >Tokelau</option>
+	<option value='TO' >Tonga</option>
+	<option value='TT' >Trinidad and Tobago</option>
+	<option value='TN' >Tunisia</option>
+	<option value='TR' >Turkey</option>
+	<option value='TM' >Turkmenistan</option>
+	<option value='TC' >Turks and Caicos Islands</option>
+	<option value='TV' >Tuvalu</option>
+	<option value='UG' >Uganda</option>
+	<option value='UA' >Ukraine</option>
+	<option value='AE' >United Arab Emirates</option>
+	<option value='GB' >United Kingdom</option>
+	<option value='US' >United States</option>
+	<option value='UM' >United States Minor Outlying Islands</option>
+	<option value='UY' >Uruguay</option>
+	<option value='UZ' >Uzbekistan</option>
+	<option value='VU' >Vanuatu</option>
+	<option value='VE' >Venezuela, Bolivarian Republic of</option>
+	<option value='VN' >Viet Nam</option>
+	<option value='VG' >Virgin Islands, British</option>
+	<option value='VI' >Virgin Islands, U.S.</option>
+	<option value='WF' >Wallis and Futuna</option>
+	<option value='EH' >Western Sahara</option>
+	<option value='YE' >Yemen</option>
+	<option value='ZM' >Zambia</option>
+	<option value='ZW' >Zimbabwe</option>
+</select>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Beneficiary Bank Name</label>
+												</div>
+												<div class="col-lg-3">
+													<input name='bank_name' type='text' class='form-control' placeholder='Bank Name' required>
+												</div>
+											</div>
+										</div>
+										<input type="hidden" name="swift" value="4521369875" />
+										<input type="hidden" name="description" value="" />
+										<input type="hidden" name="method" value="local" />
+										<div class='form-group'>
+											<div class='row'>
+												<div class='col-lg-9 ml-auto'>
+													<div class='form-check'>
+														<input type='hidden' name="save_beneficiary" value='0'>
+														<input type='checkbox' class='form-check-input' id='benz' name="save_beneficiary" value='1'>
+														<label class='form-check-label' for='benz'>Save Beneficiary</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-3">
+													<label class="login2 pull-right pull-right-pro">Details</label>
+												</div>
+												<div class="col-lg-6">
+													<textarea name="comments" type="text" class="form-control" rows="3" placeholder="Narration" ></textarea>
+												</div>
+											</div>
+										</div>
+										<div>
+											<label class="checkbox">
+												<input type="checkbox" class="form-controls" name="condition" required>
+												<p>
+													<span class="short-content">I agree with terms and conditions of domestic payments</span>
+												</p>
+											</label>
+											<div class="hidden condition-details" name="conditiond">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="login-btn-inner">
+												<div class="row">
+													<div class="col-lg-3"></div>
+													<div class="col-lg-6">
+														<div class="login-horizental cancel-wp pull-left">
+															<button class="btn btn-sm btn-primary login-submit-cs" name="transfer" type="submit">Transfer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</form>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+
+		
+		</main>
+		
+		
+	<div data-bankloader='https://creditunioncapitol.com/app/img/loading.gif'></div>
+	
+	<!-- Essential javascripts for application to work-->
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/jquery-3.3.1.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/popper.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/bootstrap.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/plugins/dataTables/datatables.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/main.js"></script>
+	<!-- The javascript plugin to display page loading on top-->
+	<script src="https://creditunioncapitol.com/connections/template/assets-user/js/plugins/pace.min.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets/js/loader.js"></script>
+	<script src="https://creditunioncapitol.com/connections/template/assets/js/main.js"></script>
+	<!-- Page specific javascripts-->
+	
+
+</script>
+	
+<!-- ...existing code... -->
+
+
+</body>
+</html>
+  

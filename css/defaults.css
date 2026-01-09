@@ -1,0 +1,50 @@
+/* general */
+
+body {
+	min-height: 100vh;
+}
+
+.sidebar-mini .main-brand,
+.sidebar-mini .brand-text {
+	display: none !important;
+}
+
+.bridge-container {
+	background-image: url(reg/img/background.jpg);
+    height: auto;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wizard-card .picture-src {
+	height: 100%;
+}
+
+.wizard-navigation .nav-pills a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.oval-pic {
+	height: 62px;
+	max-width: 62px;
+	border-radius: 50%;
+}
+
+.goog-te-gadget-simple {
+    white-space: nowrap;
+    font-family: var(--font-family-sans-serif);
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+[disabled] {
+	cursor: not-allowed;
+}
+
+.break-word {
+	word-break: break-word;
+}

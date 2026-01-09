@@ -1,0 +1,36 @@
+/* Line styles for widgets and icons */
+
+/* Horizontal line for widget separation */
+.widget-line {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 16px 0;
+}
+
+/* Vertical line for icon separation */
+.icon-line-vertical {
+    display: inline-block;
+    width: 1px;
+    height: 24px;
+    background: #e0e0e0;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+/* Dashed line for alternative styling */
+.widget-line-dashed {
+    border: none;
+    border-top: 1px dashed #bdbdbd;
+    margin: 16px 0;
+}
+
+/* Example usage for icon containers */
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container .icon-line-vertical {
+    margin-left: 12px;
+    margin-right: 12px;
+}
